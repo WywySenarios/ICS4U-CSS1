@@ -1,0 +1,16 @@
+body {
+    font-family: "Brush Script MT", monospace;
+    background-color:#fae4b9;
+}
+
+img {
+    background: #de5568;
+    border-style: double;
+    border-radius: 10%;
+    border-width: 8px;
+    border-color: #701355;
+}
+
+p {
+    color:#701355;
+}
