@@ -5,10 +5,25 @@ body {
 
 img {
     background: #de5568;
-    border-style: double;
+    border-style: none;
     border-radius: 10%;
     border-width: 8px;
     border-color: #701355;
+}
+
+table {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border:solid;
+}
+
+th {
+    vertical-align: center;
+}
+
+tr {
+    height: 15%;
 }
 
 p {
