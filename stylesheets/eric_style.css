@@ -1,3 +1,7 @@
+head {
+    font-family: "Brush Script MT", monospace;
+}
+
 body {
     font-family: "Brush Script MT", monospace;
     background-color:#fae4b9;
@@ -5,6 +9,7 @@ body {
 
 img {
     background: #de5568;
+    width: 75%;
     border-style: none;
     border-radius: 10%;
     border-width: 8px;
@@ -18,12 +23,11 @@ table {
     border:solid;
 }
 
-th {
-    vertical-align: center;
-}
-
-tr {
+th, tr {
+    border-bottom: 3px solid #ddd;
     height: 15%;
+    vertical-align: middle;
+    text-align: left;
 }
 
 p {
