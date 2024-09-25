@@ -1,0 +1,212 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <style>
+        /* Style all the paragraphs */
+        p {
+            background-color: black; 
+            color: white; 
+            padding: 20px;
+            
+        }
+
+        /* Style all elements with class 'special' */
+        .special {
+            color: lightblue; /* Change text color */
+        }
+
+
+	.styled {
+  	border: 0;
+  	line-height: 2.5;
+  	padding: 0 20px;
+  	font-size: 2rem;
+  	text-align: center;
+  	color: #fff;
+  	text-shadow: 1px 1px 1px #000;
+  	border-radius: 10px;
+  	background-color: rgb(63, 14, 199);
+  	background-image: linear-gradient(
+    	  to top left,
+    	  rgba(0, 0, 0, 0.2),
+    	  rgba(0, 0, 0, 0.2) 30%,
+    	  rgba(0, 0, 0, 0)
+  	);
+  	box-shadow:
+    	  inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    	  inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+	}
+
+	.styled:hover {
+  	  background-color: rgb(70, 42, 183);
+	}
+
+	.styled:active {
+  	  box-shadow:
+    	    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    	    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+	}
+	.center-me {
+  	  text-align: center;
+	}
+    
+    
+    .wrapper {
+    
+  display: grid;
+  grid-auto-columns: minmax(50px, auto);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 2;
+}
+.three {
+  grid-column: 3;
+  grid-row: 3;
+}
+.four {
+  grid-column: 4;
+  grid-row: 4;
+}
+.five {
+  grid-column: 5;
+  grid-row: 5;
+}
+.six {
+  grid-column: 6;
+  grid-row: 6;
+}
+
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+p span {
+  display: inline-block;
+  animation-duration: 3s;
+  animation-name: growshrink;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+@keyframes growshrink {
+  25%,
+  75% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 1000%;
+    color: rgb(255, 0, 0);
+  }
+}
+
+/*slider test*/
+
+input[type=range][orient=vertical] {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    appearance: slider-vertical;
+    width: 16px;
+    vertical-align: bottom;
+}
+
+
+
+
+
+	
+    </style>
+
+
+</head>
+
+<body style="background-color: rgba(0, 0, 36, 0.7); ">
+    <p class = "center-me">
+        This a normal paragraph...
+    <br>
+        just a <span>test</span>
+
+    </p>
+
+    <input type="range" orient="vertical" />
+
+
+    <div class="wrapper ;">
+        <div class="one">
+            <button class="favorite styled" role="button">
+                Button 1
+            </button>
+        </div>
+
+        <div class="two">
+            <button class="favorite styled" role="button">
+                Button 2
+            </button>
+        </div>
+        
+        <div class="three">
+            <button class="favorite styled" role="button">
+                Button 3
+            </button>
+        </div>
+        
+        <div class="four">
+            <button class="favorite styled" role="button">
+                Button 4
+            </button>
+        </div>
+        
+        <div class="five">
+            <button class="favorite styled" role="button">
+                Button 5
+            </button>
+        </div>
+        
+        <div class="six">
+            <button class="favorite styled" role="button">
+                Button 6
+            </button>
+        </div>
+
+      </div>
+      
+
+    <p class="special">
+        This is a paragraph with class special...
+        <span>testing</span>
+
+
+
+
+    </p>
+
+    <p class="special; position: fixed; bottom : 50; right : 50;">
+        This is a div with class special...
+        edit
+
+
+
+
+</body>
+
+</html>
