@@ -64,24 +64,24 @@
   grid-row: 1;
 }
 .two {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 2;
 }
 .three {
-  grid-column: 3;
+  grid-column: 1;
   grid-row: 3;
 }
 .four {
-  grid-column: 4;
+  grid-column: 1;
   grid-row: 4;
 }
 .five {
-  grid-column: 5;
+  grid-column: 1;
   grid-row: 5;
 }
 .six {
-  grid-column: 6;
-  grid-row: 6;
+  grid-column: 1;
+  grid-row: 10;
 }
 
 
@@ -130,6 +130,11 @@ input[type=range][orient=vertical] {
     vertical-align: bottom;
 }
 
+/*fixed pos*/
+p.pos_fixed {
+    position:fixed;
+}
+
 
 
 
@@ -140,15 +145,15 @@ input[type=range][orient=vertical] {
 
 </head>
 
-<body style="background-color: rgba(0, 0, 36, 0.7); ">
-    <p class = "center-me">
+<body style="background-color: rgba(0, 0, 36, 0.7);  ">
+    <p class = "center-me ;">
         This a normal paragraph...
-    <br>
         just a <span>test</span>
 
     </p>
 
-    <input type="range" orient="vertical" />
+    <br>
+
 
 
     <div class="wrapper ;">
@@ -191,7 +196,7 @@ input[type=range][orient=vertical] {
       </div>
       
 
-    <p class="special">
+    <p class="special;">
         This is a paragraph with class special...
         <span>testing</span>
 
@@ -200,7 +205,7 @@ input[type=range][orient=vertical] {
 
     </p>
 
-    <p class="special; position: fixed; bottom : 50; right : 50;">
+    <p class="special;">
         This is a div with class special...
         edit
 
