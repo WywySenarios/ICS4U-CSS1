@@ -64,8 +64,8 @@
   grid-row: 1;
 }
 .two {
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
 }
 .three {
   grid-column: 1;
@@ -81,11 +81,7 @@
 }
 .six {
   grid-column: 1;
-<<<<<<< Updated upstream
-  grid-row: 10;
-=======
   grid-row: 6;
->>>>>>> Stashed changes
 }
 
 
@@ -140,8 +136,6 @@ p.pos_fixed {
 }
 
 
-<<<<<<< Updated upstream
-=======
 .container {
     width: 200px;
     height: 120px;
@@ -153,18 +147,40 @@ p.pos_fixed {
     height: 100%;
 }
 
-.fixed-nav-bar {
+.fixed-nav-bar-top {
     position: fixed;
     top: 0; 
     left: 0; 
     z-index: 9999; 
     width: 100%; 
     height: 50px; 
-    background-color: #00a087;
+    background-color: #000000;
+}
+
+.fixed-nav-bar-side {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+    width: 15%; 
+    height: 80%; 
+    background-color: #000000;
+}
+
+.fixed-nav-bar-background {
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+    width: 100%; 
+    height: 70px; 
+    background-color: transparent;
+}
+
+.side-space {
+    left: 100%;
 }
 
 
->>>>>>> Stashed changes
 
 
 
@@ -175,35 +191,24 @@ p.pos_fixed {
 </head>
 
 <body style="background-color: rgba(0, 0, 36, 0.7);  ">
-<<<<<<< Updated upstream
-    <p class = "center-me ;">
-        This a normal paragraph...
-        just a <span>test</span>
-
-    </p>
-
-    <br>
 
 
+    <nav class = "fixed-nav-bar-background"></nav>
 
-    <div class="wrapper ;">
-        <div class="one">
-=======
-
-
-
-    <nav class="fixed-nav-bar">
+    <nav class="fixed-nav-bar-top">
         <p class = "center-me ;">
             <span>test</span>
     
         </p>
     </nav>
 
+    <nav class = "fixed-nav-bar-side"> 
+
+    </nav>
 
 
-    <div class="wrapper">
+    <div class="wrapper;">
         <div class="one;">
->>>>>>> Stashed changes
             <button class="favorite styled" role="button">
                 Button 1
             </button>
@@ -251,17 +256,11 @@ p.pos_fixed {
 
     </p>
 
-<<<<<<< Updated upstream
-    <p class="special;">
-        This is a div with class special...
-        edit
-=======
 
     <p class="special;">
         This is a div with class special...
         edit
     </p>
->>>>>>> Stashed changes
 
 
 
