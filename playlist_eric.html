@@ -4,51 +4,88 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/eric_style.css">
 </head>
 
-<body>
-    <p>Hey, I'm wywy!!!</p>
-    <p>Let's have some fun making HTML!!!</p>
+<div style="border-top:solid 2px #FFFFFF;top:128px" class="sidebar">
+    <a href="playlist_eric.html"><img style="width:100px" src="assets/playlist_eric_placeholdericon.png"></a>
+    <a href="playlist_jamie.html"><img style="width:100px" src="assets/playlist_jamie_placeholdericon.png"></a>
+    <a href="playlist_julia.html"><img style="width:100px" src="assets/playlist_julia_placeholdericon.png"></a>
+</div>
 
-    <table>
+<div class="topbar">
+    <p>yo</p>
+</div>
+
+<body>
+    <h1><img style="vertical-align:top;width:20%" src="assets/playlist_eric_placerholdericon2.png">DJ Wywy's Sunset Colors<div style="vertical-align:top;font-size: 16px">Wywy is super amazing and super awesome and you should definitely ask him how he's doing!</div></h1>
+
+    <table class="bordered">
         <tr>
-            <th style="width:3%;height:5%;"></th>
-            <th style="width:15%;height:5%"></th>
-            <th style="width:30%;">Title</th>
-            <th style="width:30%;">Album</th>
+            <th style="width:32px;height:5%;">#</th>
+            <th style="height:5%"></th>
+            <th style="width:38%;">Title</th>
+            <th style="width:40%;">Album</th>
             <th style="width:15%;">Length</th>
         </tr>
         <tr>
-            <th>1</th>
-            <th><img src="assets/playlist_eric_song1.png"></th>
-            <th>Windy Day in Wywyia</th>
+            <th class="songNum">1</th>
+            <th class="imgIcon"><img src="assets/playlist_eric_song1.png"></th>
+            <th><button class="songButton" onclick="openVideo('https://www.youtube.com/watch?v=x23I8f9PwlI&list=PLbJE2f8Bl_gRq7g69Z4xfHV7Je-WWvpdJ')">Windy Day in Wywyia</button></th>
             <th>Wywyia Weather</th>
+            <th>3:20</th>
         </tr>
         <tr>
-            <th>2</th>
-            <th><img src="assets/playlist_eric_song2.png"></th>
+            <th class="songNum">2</th>
+            <th class="imgIcon"><img src="assets/playlist_eric_song2.png"></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-            <th>3</th>
-            <th><img src="assets/playlist_eric_song3.png"></th>
+            <th class="songNum">3</th>
+            <th class="imgIcon"><img src="assets/playlist_eric_song3.png"></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-            <th>4</th>
-            <th><img src="assets/playlist_eric_song4.png"></th>
+            <th class="songNum">4</th>
+            <th class="imgIcon"><img src="assets/playlist_eric_song4.png"></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-            <th>5</th>
-            <th><img src="assets/playlist_eric_song5.png"></th>
+            <th class="songNum">5</th>
+            <th class="imgIcon"><img src="assets/playlist_eric_song5.png"></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-            <th>6</th>
-            <th><img src="assets/playlist_eric_song6.png"></th>
+            <th class="songNum">6</th>
+            <th class="imgIcon"><img src="assets/playlist_eric_song6.png"></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-            <th>7</th>
-            <th><img src="assets/playlist_eric_song7.png"></th>
+            <th class="songNum">7</th>
+            <th class="imgIcon"><img src="assets/playlist_eric_song7.png"></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-            <th>8</th>
-            <th><img src="assets/playlist_eric_song7.png"></th>
+            <th class="songNum">8</th>
+            <th class="imgIcon"><img src="assets/playlist_eric_song7.png"></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
     </table>
 </body>
+
+<script>
+    var openVideo = (url) => {
+        window.location.href = url;
+    }
+</script>
