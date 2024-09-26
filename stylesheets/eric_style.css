@@ -7,8 +7,8 @@ head {
 }
 
 body {
-    margin-left: calc(160px+20px);
-    margin-top: calc(160px+20px);
+    margin-left: 180px;
+    margin-top: 160px;
     font-family: "Brush Script MT", monospace;
     background-color:#fae4b9;
 }
