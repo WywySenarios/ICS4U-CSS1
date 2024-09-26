@@ -12,11 +12,8 @@ playPauseBtn.addEventListener('click', ()=>{
     if (audioPlayer.paused){
         audioPlayer.play();
         playPauseBtn.innerHTML =  '<i class = "fa fa-pause" </i>';
-<<<<<<< Updated upstream
-        initializeVisualizer();
-=======
-        //initializeVisualizer();
->>>>>>> Stashed changes
+        //initializeVisualizer()
+        
     }else{
         audioPlayer.pause();
         playPauseBtn.innerHTML = '<i class = "fa fa-play" </i>';
