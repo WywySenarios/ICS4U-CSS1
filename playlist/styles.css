@@ -70,10 +70,16 @@ body{
     margin: 20px 0;
 }
 
+.progress-bar span {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
 #seek-bar{
     flex-grow: 1;
     cursor: pointer;
 }
+
 
 .controls{
     display: flex;
@@ -116,6 +122,13 @@ body{
 }
 
 .spotify-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.spotify-row i {
     font-size: 24px;
     color: black;
     margin-bottom: 10px;
