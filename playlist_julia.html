@@ -13,50 +13,51 @@
     <!-- Sets the title of the webpage that appears in the browser tab -->
     <title>Julia Mode</title>
 
-    <!-- Links to an external CSS file for styling the HTML elements -->
-    <link rel="stylesheet" href="stylesheets\julia_style.css">
+    <!-- Links to an external CSS file for styling the HTML elements (make sure to override bars.css) -->
     <link rel="stylesheet" href="stylesheets\bars.css">
-
+    <link rel="stylesheet" href="stylesheets\julia_style.css">
 </head>
 
 
 
 <body>
-    <!-- Main content area -->
-    <main class="content">
+    <!-- Top bar -->
+    <div class="top-bar">
+        <!-- Left buttons -->
+        <div class="buttons">
 
-        <div class="top-bar">
-            <!-- Left buttons -->
-            <div class="buttons">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
 
-                <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png"
-                    alt="Submit" width="30" height="30">
-                <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png"
-                    alt="Submit" width="30" height="30">
-                <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png"
-                    alt="Submit" width="30" height="30">
-
-            </div>
-
-            <!-- Search bar -->
-            <input type="text" placeholder="Search">
-
-            <!-- Right buttons -->
-            <div class="buttons">
-
-                <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png"
-                    alt="Submit" width="30" height="30">
-                <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png"
-                    alt="Submit" width="30" height="30">
-                <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png"
-                    alt="Submit" width="30" height="30">
-
-            </div>
         </div>
+
+        <!-- Search bar -->
+        <input type="text" placeholder="Search">
+
+        <!-- Right buttons -->
+        <div class="buttons">
+
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <main style="margin-top: 70px;margin-left:100px;margin-right:220px" class="content">
+
+
 
         <div class="app">
 
-            <!--/*NEW*/-->
             <!-- Sidebar -->
             <nav class="sidebar">
                 <div class="menu-icon">
@@ -158,26 +159,27 @@
 
     </main>
 
+    <!-- Music controls (BUTTONS NOT YET ADDED) -->
     <div class="music-controls-container">
 
         <footer class="music-controls">
-
+    
             <div class="track-info">
-
+    
                 <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png"
                     alt="Now Playing" width="70" height="70" alt="Image">
-
+    
                 <div>
-
+    
                     <p>Last Drop</p>
                     <p>Red Velvet</p>
-
+    
                 </div>
-
+    
             </div>
-
+    
         </footer>
-
+    
     </div>
 </body>
 
