@@ -11,7 +11,7 @@ body {
     background-color:#fae4b9;
 }
 
-img {
+img.songIcon{
     background: #de5568;
     width: 32px;
     border-style: double;
@@ -40,6 +40,7 @@ th, tr {
 
 th.songNum {
     width:0px;
+    padding:8px
 }
 
 th.imgIcon {
