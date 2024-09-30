@@ -1,242 +1,226 @@
 <!DOCTYPE html>
+
 <html lang="en">
+  
 <head>
-<title>Julia's Playlist</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    * {
-      box-sizing: border-box;
-    }
-
-    .searchDiv { /*this is the search area white box*/
-        width: 1100px;
-        height: 40px;
-        background-color: white;
-    }
-
-    .mainDiv { /*this is the main area white box*/
-        border-radius: 5px;
-        width: 1015px;
-        height: 470px;
-        background-color: white;
-    }
-
-    /* .mainDivGrey { should go on top of main div??
-        border-radius: 5px;
-        width: 60px;
-        height: 440px
-    } */
-
-    .bottomDiv { /*this is the play area white box*/
-        border-radius: 5px;
-        width: 1200px;
-        height: 40px;
-        background-color: white;
-    }
+  
+  <!-- Defines the character encoding as UTF-8 (supports all characters, symbols) -->
+  <meta charset="UTF-8">
     
-    body { /*this is the bg*/
-        background-color: #f1f1f1;
-    } 
-
-   
-
-</style>    
-</head>
-
-<div class="searchDiv">
-    <h2> You can search here </h2>
-  </div>
-
-  <div class="mainDiv">
-    <p>Listen to music here</p>
-    </div>
-
-    <div class="bottomDiv">
-        <p>text</p>
-    </div>    </div>
-
-<html lang="en">
-
-<head>
-
-    <!-- Defines the character encoding as UTF-8 (supports all characters, symbols) -->
-    <meta charset="UTF-8">
-
-    <!-- Ensures the website is responsive on different screen sizes by adjusting the viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Sets the title of the webpage that appears in the browser tab -->
-    <title>Julia Mode</title>
-
-    <!-- Links to an external CSS file for styling the HTML elements (make sure to override bars.css) -->
-    <link rel="stylesheet" href="stylesheets\bars.css">
-    <link rel="stylesheet" href="stylesheets\julia_style.css">
+  <!-- Ensures the website is responsive on different screen sizes by adjusting the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <!-- Sets the title of the webpage that appears in the browser tab -->
+  <title>Spotify Inspired UI</title>
+    
+  <!-- Links to an external CSS file for styling the HTML elements -->
+  <link rel="stylesheet" href="stylesheets/julia_style.css">
+    
 </head>
 
 
 
 <body>
-    <!-- Top bar -->
+  <!-- Main content area -->
+  <main class="content">
+          
     <div class="top-bar">
-        <!-- Left buttons -->
-        <div class="buttons">
-
-            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
-                width="30" height="30">
-            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
-                width="30" height="30">
-            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
-                width="30" height="30">
-
-        </div>
-
-        <!-- Search bar -->
-        <input type="text" placeholder="Search">
-
-        <!-- Right buttons -->
-        <div class="buttons">
-
-            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
-                width="30" height="30">
-            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
-                width="30" height="30">
-            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
-                width="30" height="30">
-
-        </div>
+      <!-- Left buttons -->
+      <div class="buttons">
+                
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+              
+      </div>
+              
+    <!-- Search bar -->
+    <input type="text" placeholder="Search">
+          
+      <!-- Right buttons -->
+      <div class="buttons">
+                
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+              
+      </div>
     </div>
-
-    <!-- Main content area -->
-    <main style="margin-top: 70px;margin-left:100px;margin-right:220px" class="content">
-
-
-
-        <div class="app">
-
-            <!-- Sidebar -->
-            <nav class="sidebar">
-                <div class="menu-icon">
-                    <!--different icons-->
-                </div>
-                <div class="menu">
-                    <!-- Mode Images -->
-                    <div class="playlist-item">
-                        <img src="https://via.placeholder.com/100" alt="Liked Songs">
-                        <p>Main Mode</p>
-                    </div>
-                    <div class="playlist-item">
-                        <img src="https://via.placeholder.com/100" alt="Eric's Playlist">
-                        <p>Eric Mode</p>
-                    </div>
-                    <div class="playlist-item">
-                        <img src="https://via.placeholder.com/100" alt="Jamie's Playlist">
-                        <p>Jamie Mode</p>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- Main Content -->
-            <main class="main-content">
-                <header>
-                    <h1>Julia’s Playlist</h1>
-                    <p>By Julia • 50 songs, 3 hr 30 min</p>
-                </header>
-
-                <!-- Playlist Table -->
-                <table class="playlist-table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Title</th>
-                            <th>Album</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <img src="https://via.placeholder.com/30" alt="Cover"> Live My
-                                Life<br><span>aespa</span>
-                            </td>
-                            <td>Armageddon - The 1st Album</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>
-                                <img src="https://via.placeholder.com/30" alt="Cover"> the perfect
-                                pair<br><span>beabadoobee</span>
-                            </td>
-                            <td>Beatopia</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>
-                                <img src="https://via.placeholder.com/30" alt="Cover"> Iris<br><span>The Goo Goo
-                                    Dolls</span>
-                            </td>
-                            <td>Dizzy up the Girl</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>
-                                <img src="https://via.placeholder.com/30" alt="Cover"> Don’t You Think It’s
-                                Strange?<br><span>Wallows</span>
-                            </td>
-                            <td>Model</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>
-                                <img src="https://via.placeholder.com/30" alt="Cover"> adios<br><span>JAWNY</span>
-                            </td>
-                            <td>It’s Never Fair, Always True</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>
-                                <img src="https://via.placeholder.com/30" alt="Cover"> Last Drop<br><span>Red
-                                    Velvet</span>
-                            </td>
-                            <td>Cosmic</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </main>
-
-            <!-- Now Playing Section -->
-            <div class="now-playing">
-                <h3>Now Playing</h3>
-                <img src="https://via.placeholder.com/150" alt="Now Playing Cover">
-                <p>Last Drop<br><span>Red Velvet</span></p>
-            </div>
+            
+    <div class="app">
+      
+    
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="menu-icon">
         </div>
-        <!--/*NEW*/-->
+          <div class="menu">
+            <!-- Mode Images -->
+            <div class="playlist-item">
+              <img src="https://via.placeholder.com/100" alt="Liked Songs">
+                <p>Main Mode</p>
+            </div>
+            <div class="playlist-item">
+              <img src="https://via.placeholder.com/100" alt="Eric's Playlist">
+              <p>Eric Mode</p>
+            </div>
+            <div class="playlist-item">
+              <img src="https://via.placeholder.com/100" alt="Jamie's Playlist">
+              <p>Jamie Mode</p>
+            </div>
+          </div>
+    </nav>
 
-    </main>
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="playlist-container">
+        <header>
+          <h1>Julia’s Playlist</h1>
+          <p>By Julia • 50 songs, 3 hr 30 min</p>
+        </header>
 
-    <!-- Music controls (BUTTONS NOT YET ADDED) -->
-    <div class="music-controls-container">
-
-        <footer class="music-controls">
-    
-            <div class="track-info">
-    
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png"
-                    alt="Now Playing" width="70" height="70" alt="Image">
-    
-                <div>
-    
-                    <p>Last Drop</p>
+        <!-- Playlist Table -->
+        <table class="playlist-table">
+          <thead>
+            <tr class="border-bottom">
+              <th>#</th>
+              <th>Title</th>
+              <th>Album</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td> 
+                <div class="song-info">
+                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <div class="song-details">
+                    <h2>Live My Life</h2>
+                    <p>aespa</p>
+                  </div>
+                </div>
+              </td>
+              <td>Armageddon - The 1st Album</td>
+              <td>2:39</td>
+            </tr>
+            
+            <tr>
+              <td>2</td>
+                <td>
+                  <div class="song-info">
+                    <img src="https://via.placeholder.com/30" alt="Cover">
+                    <div class="song-details">
+                      <h2>the perfect pair</h2>
+                      <p>beabadoobee</p>
+                    </div>
+                  </div>
+                </td>
+              <td>Beatopia</td>
+              <td>2:57</td>
+            </tr>
+            
+            <tr>
+              <td>3</td>
+              <td>
+                <div class="song-info">
+                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <div class="song-details">
+                    <h2>Iris</h2>
+                    <p>The Goo Goo Dolls</p>
+                  </div>
+                </div>
+              </td>
+              <td>Dizzy up the Girl</td>
+              <td>4:50</td>
+            </tr>
+            
+            <tr>
+              <td>4</td>
+              <td>
+                <div class="song-info">
+                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <div class="song-details">
+                    <h2>Don't You Think It's Strange?</h2>
+                    <p>Wallows</p>
+                  </div>
+                </div>
+              </td>
+              <td>Model</td>
+              <td>3:27</td>
+            </tr>
+            
+            <tr>
+              <td>5</td>
+              <td>
+                <div class="song-info">
+                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <div class="song-details">
+                    <h2>adios</h2>
+                    <p>JAWNY</p>
+                  </div>
+                </div>                        
+              </td>
+              <td>It’s Never Fair, Always True</td>
+              <td>3:23</td>
+            </tr>
+            
+            <tr>
+              <td>6</td>
+              <td>
+                <div class="song-info">
+                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <div class="song-details">
+                    <h2>Cosmic</h2>
                     <p>Red Velvet</p>
-    
+                  </div>
                 </div>
-    
-            </div>
-    
-        </footer>
-    
+              </td>
+              <td>Cosmic</td>
+              <td>3:23</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!--end of playlist-container -->
+      
+      
+                    <!-- Now Playing Section -->
+        <div class="now-playing">
+            <h3>Now Playing</h3>
+            <img src="https://via.placeholder.com/150" alt="Now Playing Cover">
+            <p>Last Drop<br><span>Red Velvet</span></p>
+        </div>
+            
+        </main>
+
+
     </div>
+    <!--/*NEW*/-->
+    
+  </main>
+
+  <div class="music-controls-container">
+    
+    <footer class="music-controls">
+      
+        <div class="track-info">
+          
+          <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png" alt="Now Playing" width="70" height="70" alt="Image">
+
+            <div>
+              
+              <p>Last Drop</p>
+              <p>Red Velvet</p>
+                
+            </div>
+            
+        </div>
+        
+    </footer>  
+    
+  </div>
 </body>
 
 </html>
+
