@@ -1,5 +1,11 @@
 /* Universal */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } /* IDK how this works, but it fixes top-bar problem of having a weird "right-shift"! */
+
 .buttons {
     display: flex;
     gap: 10px;
@@ -12,6 +18,8 @@
     margin-top: 70px;
     margin-left: 100px;
     margin-right: 220px;
+    padding: 10px;
+    flex: 1;
 }
 
 /* Top bar */
@@ -21,6 +29,8 @@
     background: repeating-linear-gradient(#e3e3e3 50%, #c6c6c6 50%);
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     padding: 20px;
     width: 100%;
     display: flex;
@@ -103,6 +113,8 @@
 
 .music-controls .track-info {
     display: flex;
+    width:100%;
+    height:100%;
     align-items: center;
     gap: 10px;
     color: #000;
