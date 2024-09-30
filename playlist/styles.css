@@ -1,6 +1,6 @@
 body{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100vh;
     background-color: w#f0f0f0;
@@ -138,6 +138,48 @@ body{
     width: 100%;
     height: 100px;
 }
+.wrapper {
+    background: repeating-linear-gradient(#e3e3e3 50%, #2c0543 50%);
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    width: 40%;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: grid;
+    top: 10%;
+    left: 10%;
+    grid-template-columns: repeat(auto, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .two {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .four {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .five {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .six {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
 /* Universal */
 
 .buttons {
@@ -158,7 +200,7 @@ body{
 
 .top-bar {
     /* background: linear-gradient(to bottom, #e3e3e3, #c6c6c6); */
-    background: repeating-linear-gradient(#e3e3e3 50%, #1c0753 50%);
+    background: repeating-linear-gradient(#e3e3e3 50%, #108f9a 50%);
     position: fixed;
     top: 0;
     padding: 20px;
