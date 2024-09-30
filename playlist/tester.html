@@ -1,17 +1,22 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta name = "viewport" content="width = device-width, initial-scale = 1.0;">
-    <title>jamiePlayList</title>
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Tа86w+fsb2TkcmfRyVX3pBnMFcV7oQPJk19QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel = "stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stylesheets\bars.css">
+  <meta charset="UTF-8">
+  <meta name = "viewport" content="width = device-width, initial-scale = 1.0;">
+  <title>jamiePlayList</title>
 
-</head>
+  <!-- Links to external CSS file for styling the HTML elements (make sure to override bars.css) -->
+  <link rel="stylesheet" href="stylesheets\bars.css">
+  <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Tа86w+fsb2TkcmfRyVX3pBnMFcV7oQPJk19QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel = "stylesheet" href="styles.css">
 
-<style>
+  <!-- Internal CSS formatting file -->
+  <style>
     .styled {
       border: 0;
       line-height: 2.5;
@@ -167,9 +172,12 @@
     }
   </style>
 
-<body style="background-color: rgba(0, 0, 0, 0.7);">
 
-    <!-- Top bar -->
+</head>
+
+<body style="background-color: rgba(0, 0, 36, 0.7);">
+
+  <!-- Top bar -->
   <div style="background-color: rgba(0, 0, 36, 0.7);" class="top-bar">
     <!-- Left buttons -->
     <div class="buttons">
@@ -182,7 +190,6 @@
         width="30" height="30">
 
     </div>
-
 
     <!-- Search bar -->
     <input type="text" placeholder="Search">
@@ -201,7 +208,7 @@
   </div>
 
   <!-- Sidebar (idk why the bottom property doesn't seem to work) -->
-  <nav style="background-color: #383838; height: 100%;top:70px;bottom:200px;" class="sidebar">
+  <nav style="background-color: #ffffff; height: 100%;top:70px;bottom:200px;" class="sidebar">
     <div class="menu-icon">
       <!--different icons-->
     </div>
@@ -223,50 +230,48 @@
   </nav>
 
 
-
-    <div class= "plaque">
-        <div class="album-cover">
-            <img src="https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg" alt = "album-cover">
-        </div>
-
-        <div class="song-info"> 
-            <div class="song-details"> 
-                <h2>青春コンプレックス</h2> 
-                <p>結束バンド</p> 
-            </div>
-            <button class="heart"><i class="fa fa-heart"></i></button>
-        </div>
-            
-        <div class="progress-bar">
-            <span id="current-time">0:00</span>
-            <input type="range" id="seek-bar" value="0"> 
-            <spand id="duration">0:00</spand>
-        </div>
-
-        <div class="controls">
-            <button id= "shuffle"><i class="fa fa-random"></i></button>
-            <button id= "prev"><i class="fa fa-backward"></i></button>
-            <button id= "play-pause"><i class="fa fa-play"></i></button>
-            <button id= "next"><i class="fa fa-forward"></i></button>
-            <button id= "pause"><i class="fa fa-redo"></i></button>
-        </div>
-
-        <div class="bottom-row">
-            <button id= "connect-devices"><i class="fa fa-laptop"></i></button>
-            <button id= "playlist"><i class="fa fa-list"></i></button>
-        </div>
-
-        <div class="spotify-row">
-            <canvas id="visualizer"></canvas>
-        </div>
-
+  <div class="plaque">
+    <div class="album-cover">
+      <img src="https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg" alt = "album-cover">
     </div>
 
-    <audio id = "audio-player" src="res\seisyun complex.mp3" preload="auto"></audio>
-    <script src = "script.js"></script>
+    <div class="song-info">
+                  <div class="song-details">
+                        <h2>青春コンプレックス</h2>
+                        <p>結束バンド</p>
+                  </div>
+      <button class="heart"><i class="fa fa-heart"></i></button>
+    </div>
 
+            <div class="progress-bar">
+      <span id="current-time">0:00</span>
+      <input type="range" id="seek-bar" value="0">
+                  <spand id="duration">0:00</spand>
+    </div>
 
-    <!-- Music controls (BUTTONS NOT YET ADDED) -->
+    <div class="controls">
+      <button id= "shuffle"><i class="fa fa-random"></i></button>
+      <button id= "prev"><i class="fa fa-backward"></i></button>
+      <button id= "play-pause"><i class="fa fa-play"></i></button>
+      <button id= "next"><i class="fa fa-forward"></i></button>
+      <button id= "pause"><i class="fa fa-redo"></i></button>
+    </div>
+
+    <div class="bottom-row">
+      <button id= "connect-devices"><i class="fa fa-laptop"></i></button>
+      <button id= "playlist"><i class="fa fa-list"></i></button>
+    </div>
+
+    <div class="spotify-row">
+      <canvas id="visualizer"></canvas>
+    </div>
+
+  </div>
+
+  <audio id = "audio-player" src="resassets\seisyun complex.mp3" preload="auto"></audio>
+  <script src = "script.js"></script>
+
+  <!-- Music controls (BUTTONS NOT YET ADDED) -->
   <div class="music-controls-container">
 
     <footer class="music-controls">
@@ -289,7 +294,6 @@
     </footer>
 
   </div>
-
 
 </body>
 
