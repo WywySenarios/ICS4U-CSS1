@@ -1,0 +1,140 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: w#f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(82, 6, 74);
+}
+
+.album-cover img{
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+.album-cover:hover{
+    transform: scale(0.98);
+}
+
+.plaque{
+    background-color: rgba(255, 255, 255, 0.237);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.song-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.song-details{
+    text-align: left;
+}
+
+.song-info h2{
+    margin: 0;
+    font-size: 18px;
+}
+
+.song-info p{
+    margin: 5px 0 0;
+    color: #1f1f1f;
+    font-size: 14px;
+
+
+}
+
+.heart {
+    background: none;
+    color: red;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.heart:active{
+    transform: scale(0.95);
+}
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.progress-bar span {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+#seek-bar{
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.controls button:active{
+    transform: scale(0.95);
+}
+
+#play-pause{
+    font-size: 40px;
+}
+
+.bottom-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.bottom-row button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+}
+
+.bottom-row button:hover{
+    color: green;
+    transform: scale(0.98);
+}
+
+.spotify-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.spotify-row i {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#visualizer{
+    width: 100%;
+    height: 100px;
+}

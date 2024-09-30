@@ -1,23 +1,176 @@
 <!DOCTYPE html>
 
 <head>
+    <!-- Defines the character encoding as UTF-8 (supports all characters, symbols) -->
+    <meta charset="UTF-8">
+
+    <!-- Ensures the website is responsive on different screen sizes by adjusting the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the title of the webpage that appears in the browser tab -->
+    <title>EZ & Wywy Mode!!!</title>
+    <link rel="icon" type="image/x-icon" href="assets/window_icon_placeholder.ico">
+
+    <!-- Links to external CSS file for styling the HTML elements (make sure to override bars.css) -->
     <link rel="stylesheet" type="text/css" href="stylesheets/eric_style.css">
+    <link rel="stylesheet" href="stylesheets\bars.css">
 </head>
 
 <body>
-    <p>Hey, I'm wywy!!!</p>
-    <p>Let's have some fun making HTML!!!</p>
+    <!-- Top bar -->
+    <div style="background:#701355;" class="top-bar">
+        <!-- Left buttons -->
+        <div class="buttons">
 
-    <table>
-        <tr>
-            <th><img style="width:5%" src="assets/playlist_eric_song1.png"></th>
-            <th><img style="width:5%" src="assets/playlist_eric_song2.png"></th>
-            <img style="width:5%" src="assets/playlist_eric_song3.png">
-            <img style="width:5%" src="assets/playlist_eric_song4.png">
-            <img style="width:5%" src="assets/playlist_eric_song5.png">
-            <img style="width:5%" src="assets/playlist_eric_song6.png">
-            <img style="width:5%" src="assets/playlist_eric_song7.png">
-            <img style="width:5%" src="assets/playlist_eric_song7.png">
-        </tr>
-    </table>
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+
+        </div>
+
+        <!-- Search bar -->
+        <input style="background-color:#f0a383" type="text" placeholder="Search">
+
+        <!-- Right buttons -->
+        <div class="buttons">
+
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+            <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit"
+                width="30" height="30">
+
+        </div>
+    </div>
+
+    <!-- Sidebar (idk why the bottom property doesn't seem to work) -->
+    <nav style="background-color: #ffffff; height: 100%;top:70px;bottom:200px;" class="sidebar">
+        <div class="menu-icon">
+            <!--different icons-->
+        </div>
+        <div class="menu">
+            <!-- Mode Images -->
+            <div class="playlist-item">
+                <img src="https://via.placeholder.com/100" alt="Liked Songs">
+                <p>Main Mode</p>
+            </div>
+            <div class="playlist-item">
+                <img src="https://via.placeholder.com/100" alt="Eric's Playlist">
+                <p>Eric Mode</p>
+            </div>
+            <div class="playlist-item">
+                <img src="https://via.placeholder.com/100" alt="Jamie's Playlist">
+                <p>Jamie Mode</p>
+            </div>
+        </div>
+    </nav>
+
+
+    <div style="margin-top:90px;margin-left:140px;" class="playlistContent">
+        <h1><img style="vertical-align:top;width:20%" src="assets/playlist_eric_placerholdericon2.png">DJ Wywy's Sunset
+            Colors<div style="vertical-align:top;font-size: 16px">Wywy is super amazing and super awesome and you should
+                definitely ask him how he's doing!</div>
+        </h1>
+
+        <table class="bordered">
+            <tr>
+                <th style="width:32px;height:5%;">#</th>
+                <th style="height:5%"></th>
+                <th>Title</th>
+                <th style="width:40%;">Album</th>
+                <th style="width:15%;">Length</th>
+            </tr>
+            <tr>
+                <th class="songNum">1</th>
+                <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song1.png"></th>
+                <th><button class="songButton"
+                        onclick="openVideo('https://www.youtube.com/watch?v=x23I8f9PwlI&list=PLbJE2f8Bl_gRq7g69Z4xfHV7Je-WWvpdJ')">Windy
+                        Day in Wywyia</button></th>
+                <th>Wywyia Weather</th>
+                <th>3:20</th>
+            </tr>
+            <tr>
+                <th class="songNum">2</th>
+                <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song2.png"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th class="songNum">3</th>
+                <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song3.png"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th class="songNum">4</th>
+                <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song4.png"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th class="songNum">5</th>
+                <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song5.png"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th class="songNum">6</th>
+                <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song6.png"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th class="songNum">7</th>
+                <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song7.png"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th class="songNum">8</th>
+                <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song7.png"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Music controls (BUTTONS NOT YET ADDED) -->
+    <div class="music-controls-container">
+
+        <footer class="music-controls">
+
+            <div class="track-info">
+
+                <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png"
+                    alt="Now Playing" width="70" height="70" alt="Image">
+
+                <div>
+
+                    <p>Last Drop</p>
+                    <p>Red Velvet</p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
 </body>
+
+<script>
+    var openVideo = (url) => {
+        window.location.href = url;
+    }
+</script>
