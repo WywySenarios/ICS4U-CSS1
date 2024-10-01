@@ -11,10 +11,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   <!-- Sets the title of the webpage that appears in the browser tab -->
-  <title>Spotify Inspired UI</title>
+  <title>Main Mode</title>
     
   <!-- Links to an external CSS file for styling the HTML elements -->
-  <link rel="stylesheet" href="stylesheets\main_style.css">
+  <link rel="stylesheet" href="stylesheets/main_style.css">
     
 </head>
 
@@ -28,9 +28,9 @@
       <!-- Left buttons -->
       <div class="buttons">
                 
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="assets/julia_assets/back.png" alt="Back" width="30" height="30">
+        <input type="image" src="assets/julia_assets/forward.png" alt="Forward" width="30" height="30">
+        <input type="image" src="assets/julia_assets/home.png" alt="Home" width="30" height="30">
               
       </div>
               
@@ -40,10 +40,9 @@
       <!-- Right buttons -->
       <div class="buttons">
                 
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-              
+        <input type="image" src="assets/julia_assets/notifications.png" alt="Notifications" width="30" height="30">
+        <input type="image" src="assets/julia_assets/settings.png" alt="Settings" width="30" height="30">
+        <input type="image" src="assets/julia_assets/pfp.png" alt="Profile" width="30" height="30">  
       </div>
     </div>
             
@@ -58,55 +57,35 @@
       <div class="modes">
                 
         <!-- eric -->
-        <div class="mode-card">
-                      
-          <img src="https://via.placeholder.com/150" alt="Eric Mode Cover"> 
-          <p>Eric Mode</p>
-                      
+        <div class="mode-card">  
+          <a href="playlist_eric.html"><img src="https://via.placeholder.com/150" alt="Eric Mode Cover"></a> 
+          <p>Eric Mode</p>     
         </div>
 
         <!-- jamie -->
           <div class="mode-card">
-                      
-            <img src="https://via.placeholder.com/150" alt="Jamie Mode Cover">
+            <a href="playlist_jamie.html"><img src="https://via.placeholder.com/150" alt="Jamie Mode Cover"></a>
             <p>Jamie Mode</p>
-                        
-        </div>
-                    
+          </div>        
                     
         <!-- julia -->
-                  
-        <div class="mode-card">
-                      
-          <img src="https://via.placeholder.com/150" alt="Julia Mode Cover"> 
-          <p>Julia Mode</p>
-                      
-        </div>
-                    
+        <div class="mode-card">          
+          <a href="playlist_julia.html"><img src="https://via.placeholder.com/150" alt="Julia Mode Cover"></a>
+          <p>Julia Mode</p>        
+        </div>        
       </div>
-      
     </div>
   </main>
 
-  <div class="music-controls-container">
-    
+  <div class="music-controls-container"> 
     <footer class="music-controls">
-      
         <div class="track-info">
-          
           <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png" alt="Now Playing" width="70" height="70" alt="Image">
-
             <div>
-              
-              <p>Choose Your Mode</p>
-                
+              <p>Choose Your Mode</p> 
             </div>
-            
         </div>
-        
     </footer>  
-    
   </div>
 </body>
-
 </html>

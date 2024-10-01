@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   <!-- Sets the title of the webpage that appears in the browser tab -->
-  <title>Spotify Inspired UI</title>
+  <title>Julia Mode</title>
     
   <!-- Links to an external CSS file for styling the HTML elements -->
   <link rel="stylesheet" href="stylesheets/julia_style.css">
@@ -28,9 +28,9 @@
       <!-- Left buttons -->
       <div class="buttons">
                 
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <a href="main.html"><input type="image" src="assets/julia_assets/back.png" alt="Back" width="30" height="30"></a>
+        <a href="playlist_eric.html"><input type="image" src="assets/julia_assets/forward.png" alt="Forward" width="30" height="30"></a>
+        <a href="main.html"><input type="image" src="assets/julia_assets/home.png" alt="Home" width="30" height="30"></a>
               
       </div>
               
@@ -40,9 +40,9 @@
       <!-- Right buttons -->
       <div class="buttons">
                 
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
-        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="assets/julia_assets/notifications.png" alt="Notifications" width="30" height="30">
+        <input type="image" src="assets/julia_assets/settings.png" alt="Settings" width="30" height="30">
+        <input type="image" src="assets/julia_assets/pfp.png" alt="Profile" width="30" height="30">
               
       </div>
     </div>
@@ -57,15 +57,15 @@
           <div class="menu">
             <!-- Mode Images -->
             <div class="playlist-item">
-              <img src="https://via.placeholder.com/100" alt="Liked Songs">
+              <a href="main.html"><img src="https://static-00.iconduck.com/assets.00/spotify-icon-1024x1024-7zm2z9zz.png" alt="Liked Songs"></a>
                 <p>Main Mode</p>
             </div>
             <div class="playlist-item">
-              <img src="https://via.placeholder.com/100" alt="Eric's Playlist">
+              <a href="playlist_eric.html"><img src="https://via.placeholder.com/100" alt="Eric's Playlist"></a>
               <p>Eric Mode</p>
             </div>
             <div class="playlist-item">
-              <img src="https://via.placeholder.com/100" alt="Jamie's Playlist">
+              <a href="playlist_jamie.html"></a><img src="https://via.placeholder.com/100" alt="Jamie's Playlist"></a>
               <p>Jamie Mode</p>
             </div>
           </div>
@@ -95,7 +95,7 @@
               <td>1</td>
               <td> 
                 <div class="song-info">
-                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <img src="assets/julia_assets/live-my-life-cover.jpeg" alt="Cover">
                   <div class="song-details">
                     <h2>Live My Life</h2>
                     <p>aespa</p>
@@ -110,7 +110,7 @@
               <td>2</td>
                 <td>
                   <div class="song-info">
-                    <img src="https://via.placeholder.com/30" alt="Cover">
+                    <img src="assets/julia_assets/the-perfect-pair-cover.jpeg" alt="Cover">
                     <div class="song-details">
                       <h2>the perfect pair</h2>
                       <p>beabadoobee</p>
@@ -125,7 +125,7 @@
               <td>3</td>
               <td>
                 <div class="song-info">
-                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <img src="assets/julia_assets/iris-cover.jpeg" alt="Cover">
                   <div class="song-details">
                     <h2>Iris</h2>
                     <p>The Goo Goo Dolls</p>
@@ -140,7 +140,7 @@
               <td>4</td>
               <td>
                 <div class="song-info">
-                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <img src="assets/julia_assets/dont-you-think-its-strange-cover.jpeg" alt="Cover">
                   <div class="song-details">
                     <h2>Don't You Think It's Strange?</h2>
                     <p>Wallows</p>
@@ -155,7 +155,7 @@
               <td>5</td>
               <td>
                 <div class="song-info">
-                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <img src="assets/julia_assets/adios-cover.jpeg" alt="Cover">
                   <div class="song-details">
                     <h2>adios</h2>
                     <p>JAWNY</p>
@@ -170,7 +170,7 @@
               <td>6</td>
               <td>
                 <div class="song-info">
-                  <img src="https://via.placeholder.com/30" alt="Cover">
+                  <img src="assets/julia_assets/cosmic-cover.jpeg" alt="Cover">
                   <div class="song-details">
                     <h2>Cosmic</h2>
                     <p>Red Velvet</p>
@@ -184,41 +184,30 @@
         </table>
       </div> <!--end of playlist-container -->
       
-      
-                    <!-- Now Playing Section -->
-        <div class="now-playing">
-            <h3>Now Playing</h3>
-            <img src="https://via.placeholder.com/150" alt="Now Playing Cover">
-            <p>Last Drop<br><span>Red Velvet</span></p>
-        </div>
-            
-        </main>
-
-
-    </div>
-    <!--/*NEW*/-->
     
-  </main>
+      <!-- Now Playing Section -->
+      <div class="now-playing">
+        <h3>Now Playing</h3>
+          <img src="assets/julia_assets/cosmic-cover.jpeg" alt="Now Playing Cover">
+          <p>Last Drop<br><span>Red Velvet</span></p>
+      </div>
+            
+    </main>
+    
+  </div>
+    
+</main>
 
   <div class="music-controls-container">
-    
     <footer class="music-controls">
-      
         <div class="track-info">
-          
           <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png" alt="Now Playing" width="70" height="70" alt="Image">
-
             <div>
-              
               <p>Last Drop</p>
               <p>Red Velvet</p>
-                
             </div>
-            
         </div>
-        
     </footer>  
-    
   </div>
 </body>
 
