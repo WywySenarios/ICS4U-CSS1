@@ -1,175 +1,178 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta name = "viewport" content="width = device-width, initial-scale = 1.0;">
-    <title>jamiePlayList</title>
-    <link rel="stylesheet" href="stylesheets\bars.css">
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Tа86w+fsb2TkcmfRyVX3pBnMFcV7oQPJk19QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel = "stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0;">
+  <title>jamiePlayList</title>
+  <link rel="stylesheet" href="stylesheets\bars.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Tа86w+fsb2TkcmfRyVX3pBnMFcV7oQPJk19QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <style>
-    .styled {
-      border: 0;
-      line-height: 2.5;
-      padding: 0 20px;
-      font-size: 2rem;
-      text-align: center;
-      color: #fff;
-      text-shadow: 1px 1px 1px #000;
-      border-radius: 10px;
-      background-color: rgb(63, 14, 199);
-      background-image: linear-gradient(to top left,
-          rgba(0, 0, 0, 0.2),
-          rgba(0, 0, 0, 0.2) 30%,
-          rgba(0, 0, 0, 0));
-      box-shadow:
-        inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(63, 14, 199);
+    background-image: linear-gradient(to top left,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 30%,
+        rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .styled:hover {
+    background-color: rgb(70, 42, 183);
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .center-me {
+    text-align: center;
+  }
+
+
+  .wrapper {
+
+    display: grid;
+    grid-auto-columns: minmax(5px, 5px);
+    gap: 1%;
+    grid-auto-rows: minmax(5px, 5px);
+  }
+
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .three {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  p {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+  }
+
+  p span {
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: growshrink;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
     }
 
-    .styled:hover {
-      background-color: rgb(70, 42, 183);
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
+  @keyframes growshrink {
+
+    25%,
+    75% {
+      scale: 100%;
     }
 
-    .styled:active {
-      box-shadow:
-        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    50% {
+      scale: 150%;
+      color: rgb(255, 0, 0);
     }
+  }
 
-    .center-me {
-      text-align: center;
-    }
+  /*slider test*/
 
+  input[type=range][orient=vertical] {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    appearance: slider-vertical;
+    width: 16px;
+    vertical-align: bottom;
+  }
 
-    .wrapper {
-
-      display: grid;
-      grid-auto-columns: minmax(5px, 5px);
-      gap: 1%;
-      grid-auto-rows: minmax(5px, 5px);
-    }
-
-    .one {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    .two {
-      grid-column: 2;
-      grid-row: 1;
-    }
-
-    .three {
-      grid-column: 1;
-      grid-row: 3;
-    }
-
-    p {
-      animation-duration: 1.5s;
-      animation-name: slidein;
-    }
-
-    p span {
-      display: inline-block;
-      animation-duration: 3s;
-      animation-name: growshrink;
-      animation-iteration-count: infinite;
-    }
-
-    @keyframes slidein {
-      from {
-        translate: 150vw 0;
-        scale: 200% 1;
-      }
-
-      to {
-        translate: 0 0;
-        scale: 100% 1;
-      }
-    }
-
-    @keyframes growshrink {
-
-      25%,
-      75% {
-        scale: 100%;
-      }
-
-      50% {
-        scale: 150%;
-        color: rgb(255, 0, 0);
-      }
-    }
-
-    /*slider test*/
-
-    input[type=range][orient=vertical] {
-      writing-mode: vertical-lr;
-      direction: rtl;
-      appearance: slider-vertical;
-      width: 16px;
-      vertical-align: bottom;
-    }
-
-    /*fixed pos*/
-    p.pos_fixed {
-      position: fixed;
-    }
+  /*fixed pos*/
+  p.pos_fixed {
+    position: fixed;
+  }
 
 
-    .container {
-      width: 200px;
-      height: 120px;
-    }
+  .container {
+    width: 200px;
+    height: 120px;
+  }
 
-    /* Resize images */
-    .container img {
-      width: 500%;
-      height: 100%;
-    }
+  /* Resize images */
+  .container img {
+    width: 500%;
+    height: 100%;
+  }
 
-    .fixed-nav-bar-top {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
-      width: 100%;
-      height: 50px;
-      background-color: #000000;
-    }
+  .fixed-nav-bar-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+  }
 
-    .fixed-nav-bar-side {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
-      width: 15%;
-      height: 100%;
-      background-color: #000000;
-    }
+  .fixed-nav-bar-side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 15%;
+    height: 100%;
+    background-color: #000000;
+  }
 
-    .fixed-nav-bar-background {
-      top: 0;
-      left: 0;
-      z-index: 9999;
-      width: 100%;
-      height: 70px;
-      background-color: transparent;
-    }
+  .fixed-nav-bar-background {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+  }
 
-    .side-space {
-      left: 100%;
-    }
-  </style>
+  .side-space {
+    left: 100%;
+  }
+</style>
 
 <body style="background-color: rgba(0, 0, 36, 0.7);">
 
-    <!-- Top bar -->
+  <!-- Top bar -->
   <div style="background-color: rgba(0, 0, 36, 0.7);" class="top-bar">
     <!-- Left buttons -->
     <div class="buttons">
@@ -208,79 +211,63 @@
     <div class="menu">
       <!-- Mode Images -->
       <div class="playlist-item">
-        <img src="https://via.placeholder.com/100" alt="Liked Songs">
+        <a href="playlist_julia.html"><img src="https://via.placeholder.com/100" alt="Liked Songs"></a>
         <p>Main Mode</p>
       </div>
       <div class="playlist-item">
-        <img src="https://via.placeholder.com/100" alt="Eric's Playlist">
+        <a href="playlist_eric.html"><img src="https://via.placeholder.com/100" alt="Eric's Playlist"></a>
         <p>Eric Mode</p>
       </div>
       <div class="playlist-item">
-        <img src="https://via.placeholder.com/100" alt="Jamie's Playlist">
+        <a href="playlist_jamie.html"><img src="https://via.placeholder.com/100" alt="Jamie's Playlist"></a>
         <p>Jamie Mode</p>
       </div>
     </div>
   </nav>
 
 
-
-    <div class= "plaque">
-        <div class="album-cover">
-            <img src="https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg" alt = "album-cover">
-        </div>
-
-        <div class="song-info"> 
-            <div class="song-details"> 
-                <h2>青春コンプレックス</h2> 
-                <p>結束バンド</p> 
-            </div>
-            <button class="heart"><i class="fa fa-heart"></i></button>
-        </div>
-            
-        <div class="progress-bar">
-            <span id="current-time">0:00</span>
-            <input type="range" id="seek-bar" value="0"> 
-            <spand id="duration">0:00</spand>
-        </div>
-
-        <div class="controls">
-            <button id= "shuffle"><i class="fa fa-random"></i></button>
-            <button id= "prev"><i class="fa fa-backward"></i></button>
-            <button id= "play-pause"><i class="fa fa-play"></i></button>
-            <button id= "next"><i class="fa fa-forward"></i></button>
-            <button id= "pause"><i class="fa fa-redo"></i></button>
-        </div>
-
-        <div class="bottom-row">
-            <button id= "connect-devices"><i class="fa fa-laptop"></i></button>
-            <button id= "playlist"><i class="fa fa-list"></i></button>
-        </div>
-
-        <div class="spotify-row">
-            <canvas id="visualizer"></canvas>
-        </div>
-
-    </div>
-
-    <audio id = "audio-player" src="assets\seisyun complex.mp3" preload="auto"></audio>
-    <script src = "script.js"></script>
-
-
-    <!-- Music controls (BUTTONS NOT YET ADDED) -->
+  <!-- Music controls (BUTTONS NOT YET ADDED) -->
   <div class="music-controls-container">
 
     <footer class="music-controls">
 
       <div class="track-info">
 
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png"
-          alt="Now Playing" width="70" height="70" alt="Image">
+        <div class="album-cover">
+          <img src="https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg" alt="Now Playing" width="70" height="70"
+            alt="Image">
+        </div>
 
         <div>
+          <div class="song-details">
+            <h2>青春コンプレックス</h2>
+            <p>結束バンド</p>
+          </div>
 
-          <p>Last Drop</p>
-          <p>Red Velvet</p>
+        </div>
+
+
+        <div class="controls">
+          <div style="margin-top:15px;justify-content:center;align-items:center;">
+            <div style="width:220px;">
+              <button id="shuffle"><i class="fa fa-random"></i></button>
+              <button id="prev"><i class="fa fa-backward"></i></button>
+              <button id="play-pause"><i class="fa fa-play"></i></button>
+              <button id="next"><i class="fa fa-forward"></i></button>
+              <button id="pause"><i class="fa fa-redo"></i></button>
+            </div>
+            <div class="progress-bar">
+              <span id="current-time">0:00</span>
+              <input type="range" id="seek-bar" value="0">
+              <spand id="duration">0:00</spand>
+            </div>
+          </div>
+
+          <audio id="audio-player" src="assets\seisyun complex.mp3" preload="auto"></audio>
+        </div>
+
+
+        <div class="control_toggleables">
 
         </div>
 
@@ -292,5 +279,7 @@
 
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
