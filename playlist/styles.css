@@ -142,9 +142,10 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -130px;
+    top: -20%;
     left: 70px;
-    width: 200px;
+    width: 90%;
+    height: 65%;
     padding: 80px;
     width: 100%;
     justify-content: left;

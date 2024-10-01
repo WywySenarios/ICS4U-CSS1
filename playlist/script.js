@@ -41,6 +41,11 @@ audioPlayer.addEventListener( 'loadedmetadata', ()=>{
 })
 
 function resetTimeBar(){
+
+    audioPlayer.pause();
+    playPauseBtn.innerHTML = '<i class = "fa fa-play" </i>';
+    console.log("stopped");
+
     
     console.log('meta data loaded', audioPlayer.duration)
     const durationMinutes = Math.floor(audioPlayer.duration/60)
@@ -132,14 +137,15 @@ function drawVisualizer(){
 }
 
 song1btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
     console.log("test");
-    
     audioPlayer = document.getElementById("audio-player1");
     Cover.src = "https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg";
     PlayingSong.value = '青春コンプレックス';
     resetTimeBar();
 })
 song2btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
     console.log("test");
     audioPlayer = document.getElementById("audio-player2");
     Cover.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/3/35/Distortion%21%21_Digital_Cover_%28ANXX-01128%29.png/revision/latest?cb=20230127092411";
@@ -147,24 +153,44 @@ song2btn.addEventListener('click', ()=>{
     resetTimeBar();
 })
 song3btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
     console.log("test");
     audioPlayer = document.getElementById("audio-player3");
     Cover.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/7/72/Karakara_Digital_Cover_%28ANXX-01131%29.png/revision/latest?cb=20230127092506";
     resetTimeBar();
 })
 song4btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
     console.log("test");
-    audioPlayer = document.getElementById("audio-player1");
+    audioPlayer = document.getElementById("audio-player4");
 })
 song5btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
     console.log("test");
-    audioPlayer = document.getElementById("audio-player1");
+    audioPlayer = document.getElementById("audio-player5");
 })
 song6btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
     console.log("test");
-    audioPlayer = document.getElementById("audio-player1");
+    audioPlayer = document.getElementById("audio-player6");
 })
 song7btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
     console.log("test");
-    audioPlayer = document.getElementById("audio-player1");
+    audioPlayer = document.getElementById("audio-player7");
+})
+song8btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player8");
+})
+song9btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player9");
+})
+song10btn.addEventListener('click', ()=>{
+    audioPlayer.pause();
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player10");
 })
