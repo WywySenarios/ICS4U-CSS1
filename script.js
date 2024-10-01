@@ -4,7 +4,7 @@ const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
 const seekBar = document.getElementById('seek-bar');
 const visualizerCanvas = document.getElementById ('visualizer');
-const canvasContext = visualizerCanvas.getContext('2d');
+// const canvasContext = visualizerCanvas.getContext('2d');
 
 let audioContext, analyser, dataArray, bufferLength;
 
