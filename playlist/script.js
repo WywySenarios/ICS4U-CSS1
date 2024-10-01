@@ -41,12 +41,12 @@ audioPlayer.addEventListener( 'loadedmetadata', ()=>{
 })
 
 function resetTimeBar(){
-    audioPlayer.addEventListener( 'loadedmetadata', ()=>{
-        console.log('meta data loaded', audioPlayer.duration)
-        const durationMinutes = Math.floor(audioPlayer.duration/60)
-        const durationSeconds = Math.floor(audioPlayer.duration%60)
-        durationEl.textContent = `${durationMinutes}:${durationSeconds < 10 ? 'o' : ''}${durationSeconds}`
-    })
+    
+    console.log('meta data loaded', audioPlayer.duration)
+    const durationMinutes = Math.floor(audioPlayer.duration/60)
+    const durationSeconds = Math.floor(audioPlayer.duration%60)
+    durationEl.textContent = `${durationMinutes}:${durationSeconds < 10 ? 'o' : ''}${durationSeconds}`
+    
     audioPlayer.addEventListener( 'timeupdate', ()=>{
         console.log('meta data loaded', audioPlayer.currentTime)
         const currentMinutes = Math.floor(audioPlayer.currentTime/60)
