@@ -1,35 +1,112 @@
 <!DOCTYPE html>
+
+<html lang="en">
+  
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <div class="fixed"><img style="margin-top:50px;width:32px;height:32px;border-style:solid;border-color:rgb(0,0,0);border-radius:5%;" src="assets/home_placeholdericon.png" alt="Home"></div>
-    <input style="position:fixed;margin-top:50px;margin-left: 10%;width:60%" type="text" value="SEARCH THE WYWYS">
+  
+  <!-- Defines the character encoding as UTF-8 (supports all characters, symbols) -->
+  <meta charset="UTF-8">
+    
+  <!-- Ensures the website is responsive on different screen sizes by adjusting the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <!-- Sets the title of the webpage that appears in the browser tab -->
+  <title>Spotify Inspired UI</title>
+    
+  <!-- Links to an external CSS file for styling the HTML elements -->
+  <link rel="stylesheet" href="stylesheets\main_style.css">
+    
 </head>
 
+
+
 <body>
+  <!-- Main content area -->
+  <main class="content">
+          
+    <div class="top-bar">
+      <!-- Left buttons -->
+      <div class="buttons">
+                
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+              
+      </div>
+              
+    <!-- Search bar -->
+    <input type="text" placeholder="Search">
+          
+      <!-- Right buttons -->
+      <div class="buttons">
+                
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+        <input type="image" src="https://icons.veryicon.com/png/System/Longhorn%20R2/Back%20Button.png" alt="Submit" width="30" height="30">
+              
+      </div>
+    </div>
+            
 
-    <p>
-        Choose your mode ig
-    </p>
 
-    <a href="playlist_eric.html"><img src="assets/playlist_eric_placeholdericon.png" alt="Eric's Playlist"></a>
-    <a href="playlist_jamie.html"><img src="assets/playlist_jamie_placeholdericon.png" alt="Jamie's Playlist"></a>
-    <a href="playlist_julia.html"><img src="assets/playlist_julia_placeholdericon.png" alt="Julia's Playlist"></a>
+    <!-- section for displaying modes -->
+    <div class="modes-section">
+              
+      <h1>Choose Your Spotify Mode:</h1>
 
-    <!-- <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p>
-    <p>I love debugging!</p> -->
+      <!-- Container for mode cards -->
+      <div class="modes">
+                
+        <!-- eric -->
+        <div class="mode-card">
+                      
+          <img src="https://via.placeholder.com/150" alt="Eric Mode Cover"> 
+          <p>Eric Mode</p>
+                      
+        </div>
+
+        <!-- jamie -->
+          <div class="mode-card">
+                      
+            <img src="https://via.placeholder.com/150" alt="Jamie Mode Cover">
+            <p>Jamie Mode</p>
+                        
+        </div>
+                    
+                    
+        <!-- julia -->
+                  
+        <div class="mode-card">
+                      
+          <img src="https://via.placeholder.com/150" alt="Julia Mode Cover"> 
+          <p>Julia Mode</p>
+                      
+        </div>
+                    
+      </div>
+      
+    </div>
+  </main>
+
+  <div class="music-controls-container">
+    
+    <footer class="music-controls">
+      
+        <div class="track-info">
+          
+          <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png" alt="Now Playing" width="70" height="70" alt="Image">
+
+            <div>
+              
+              <p>Choose Your Mode</p>
+                
+            </div>
+            
+        </div>
+        
+    </footer>  
+    
+  </div>
 </body>
+
+</html>

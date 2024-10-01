@@ -8,14 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open playlist_julia.html",
-<<<<<<< HEAD
-            "file": "c:\\Users\\julia\\OneDrive\\Documents\\GitHub\\ICS4U-CSS1\\playlist\\playlist_julia.html"
-        }
-    ]
-}
-=======
             "file": "c:\\Users\\julia\\OneDrive\\Documents\\GitHub\\ICS4U-CSS1\\playlist_julia.html"
         }
     ]
 }
->>>>>>> bf76d34d26ae8c201f033ebdaf565c95979989f0
