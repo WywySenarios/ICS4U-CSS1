@@ -5,6 +5,7 @@ const durationEl = document.getElementById('duration');
 const seekBar = document.getElementById('seek-bar');
 const visualizerCanvas = document.getElementById ('visualizer');
 const canvasContext = visualizerCanvas.getContext('2d');
+const 青春コンプレックスbtn = document.getElementById('青春コンプレックス');
 
 let audioContext, analyser, dataArray, bufferLength;
 
@@ -96,3 +97,6 @@ function drawVisualizer(){
     }
 }
 
+青春コンプレックスbtn.addEventListener('click', ()=>{
+    console.log("test");
+})
