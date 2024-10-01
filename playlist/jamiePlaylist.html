@@ -149,6 +149,8 @@
 
 <body style="background-color: rgba(0, 0, 0, 0.7);">
 
+
+
     <!-- Top bar -->
   <div style="background-color: rgba(0, 0, 36, 0.7);" class="top-bar">
     <!-- Left buttons -->
@@ -204,25 +206,15 @@
 
 
 
-  <div class="wrapper">
-    <div class="one"><button>button 1</button></div>
-    <div class="two"><button>button 2</button></div>
-    <div class="three"><button>button 3</button></div>
-    <div class="four"><button>button 4</button></div>
-    <div class="five"><button>button 5</button></div>
-    <div class="six"><button>button 6</button></div>
-  </div>
-
-
 
     <div class= "plaque">
         <div class="album-cover">
-            <img src="https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg" alt = "album-cover">
+            <img id = "Cover" src="https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg" alt = "album-cover">
         </div>
 
         <div class="song-info"> 
             <div class="song-details"> 
-                <h2>青春コンプレックス</h2> 
+                <h2 id = "playingSong">青春コンプレックス</h2> 
                 <p>結束バンド</p> 
             </div>
             <button class="heart"><i class="fa fa-heart"></i></button>
@@ -253,12 +245,36 @@
 
     </div>
 
-    <audio id = "audio-player" src="res\seisyun complex.mp3" preload="auto"></audio>
+    <div class="vertical-menu">
+      <a href="#"; id = "青春コンプレックス">青春コンプレックス</a>
+      <a href="#"; id = "Distortion!!">Distortion!!</a>
+      <a href="#"; id = "カラカラ">カラカラ</a>
+      <a href="#">song4</a>
+      <a href="#">song5</a>
+      <a href="#">song6</a>
+      <a href="#">song7</a>
+      <a href="#">song8</a>
+      <a href="#">song9</a>
+      <a href="#">song10</a>
+  </div>
+
+    <audio id = "audio-player1" src="res\seisyun complex.mp3" preload="auto"></audio>
+    <audio id = "audio-player2" src="res\Distortion!!.mp3" preload="auto"></audio>
+    <audio id = "audio-player3" src="res\Karakara.mp3" preload="auto"></audio>
+    <audio id = "audio-player4" src="res\Distortion!!.mp3" preload="auto"></audio>
+    <audio id = "audio-player5" src="res\Distortion!!.mp3" preload="auto"></audio>
+    <audio id = "audio-player6" src="res\Distortion!!.mp3" preload="auto"></audio>
+    <audio id = "audio-player7" src="res\Distortion!!.mp3" preload="auto"></audio>
+    <audio id = "audio-player8" src="res\Distortion!!.mp3" preload="auto"></audio>
+    <audio id = "audio-player9" src="res\Distortion!!.mp3" preload="auto"></audio>
+    <audio id = "audio-player10" src="res\Distortion!!.mp3" preload="auto"></audio>
+
     <script src = "script.js"></script>
 
 
+
     <!-- Music controls (BUTTONS NOT YET ADDED) -->
-  <div class="music-controls-container">
+  <!--<div class="music-controls-container">
 
     <footer class="music-controls">
 
@@ -271,7 +287,7 @@
         <div>
 
           <p>Last Drop</p>
-          <p>青春コンプレックス</p>
+          <p id = "playingSong">青春コンプレックス</p>
 
         </div>
 
@@ -279,7 +295,7 @@
 
     </footer>
 
-  </div>
+  </div>-->
 
 
 </body>
