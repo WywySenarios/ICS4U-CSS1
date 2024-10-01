@@ -141,7 +141,7 @@ song1btn.addEventListener('click', ()=>{
     console.log("test");
     audioPlayer = document.getElementById("audio-player1");
     Cover.src = "https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg";
-    PlayingSong.value = '青春コンプレックス';
+    PlayingSong.textContent = '青春コンプレックス';
     resetTimeBar();
 })
 song2btn.addEventListener('click', ()=>{
@@ -149,7 +149,7 @@ song2btn.addEventListener('click', ()=>{
     console.log("test");
     audioPlayer = document.getElementById("audio-player2");
     Cover.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/3/35/Distortion%21%21_Digital_Cover_%28ANXX-01128%29.png/revision/latest?cb=20230127092411";
-    PlayingSong.value = 'Distortion!!';
+    PlayingSong.textContent = 'Distortion!!';
     resetTimeBar();
 })
 song3btn.addEventListener('click', ()=>{
@@ -157,6 +157,7 @@ song3btn.addEventListener('click', ()=>{
     console.log("test");
     audioPlayer = document.getElementById("audio-player3");
     Cover.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/7/72/Karakara_Digital_Cover_%28ANXX-01131%29.png/revision/latest?cb=20230127092506";
+    PlayingSong.textContent = 'カラカラ';
     resetTimeBar();
 })
 song4btn.addEventListener('click', ()=>{
