@@ -12,7 +12,11 @@
     <link rel="icon" type="image/x-icon" href="assets/window_icon_placeholder.ico">
 
     <!-- Links to external CSS file for styling the HTML elements (make sure to override bars.css) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Tа86w+fsb2TkcmfRyVX3pBnMFcV7oQPJk19QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="stylesheets/eric_style.css">
+    
     <link rel="stylesheet" href="stylesheets\bars.css">
 </head>
 
@@ -87,63 +91,88 @@
             <tr>
                 <th class="songNum">1</th>
                 <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song1.png"></th>
-                <th><button class="songButton"
-                        onclick="openVideo('https://www.youtube.com/watch?v=x23I8f9PwlI&list=PLbJE2f8Bl_gRq7g69Z4xfHV7Je-WWvpdJ')">Windy
-                        Day in Wywyia</button></th>
+                <th><a href="#" ; id="song1">Day in Wywyia</a></th>
                 <th>Wywyia Weather</th>
                 <th>3:20</th>
             </tr>
             <tr>
                 <th class="songNum">2</th>
                 <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song2.png"></th>
-                <th></th>
+                <th><a href="#" ; id="song2">Wywy 2</a></th>
                 <th></th>
                 <th></th>
             </tr>
             <tr>
                 <th class="songNum">3</th>
                 <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song3.png"></th>
-                <th></th>
+                <th><a href="#" ; id="song3">Wywy 3</a></th>
                 <th></th>
                 <th></th>
             </tr>
             <tr>
                 <th class="songNum">4</th>
                 <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song4.png"></th>
-                <th></th>
+                <th><a href="#" ; id="song4">Wywy 4</a></th>
                 <th></th>
                 <th></th>
             </tr>
             <tr>
                 <th class="songNum">5</th>
                 <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song5.png"></th>
-                <th></th>
+                <th><a href="#" ; id="song5">Wywy 5</a></th>
                 <th></th>
                 <th></th>
             </tr>
             <tr>
                 <th class="songNum">6</th>
                 <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song6.png"></th>
-                <th></th>
+                <th><a href="#" ; id="song6">Wywy 6</a></th>
                 <th></th>
                 <th></th>
             </tr>
             <tr>
                 <th class="songNum">7</th>
                 <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song7.png"></th>
-                <th></th>
+                <th><a href="#" ; id="song7">Wywy 7</a></th>
                 <th></th>
                 <th></th>
             </tr>
             <tr>
                 <th class="songNum">8</th>
                 <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song7.png"></th>
-                <th></th>
+                <th><a href="#" ; id="song8">Wywy 8</a></th>
                 <th></th>
                 <th></th>
             </tr>
+            <tr></tr>
+            <th class="songNum">9</th>
+            <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song7.png"></th>
+            <th><a href="#" ; id="song9">Wywy 9</a></th>
+            <th></th>
+            <th></th>
+            </tr>
+            <tr></tr>
+            <th class="songNum">10</th>
+            <th class="imgIcon"><img class="songIcon" src="assets/playlist_eric_song7.png"></th>
+            <th><a href="#" ; id="song10">Wywy 10</a></th>
+            <th></th>
+            <th></th>
+            </tr>
         </table>
     </div>
+
+    <!-- Song files -->
+    <audio id="audio-player1" src="assets/seisyun complex.mp3" preload="auto"></audio>
+    <audio id="audio-player2" src="assets/Distortion!!.mp3" preload="auto"></audio>
+    <audio id="audio-player3" src="assets/Karakara.mp3" preload="auto"></audio>
+    <audio id="audio-player4" src="assets/Distortion!!.mp3" preload="auto"></audio>
+    <audio id="audio-player5" src="assets/Distortion!!.mp3" preload="auto"></audio>
+    <audio id="audio-player6" src="assets/Distortion!!.mp3" preload="auto"></audio>
+    <audio id="audio-player7" src="assets/Distortion!!.mp3" preload="auto"></audio>
+    <audio id="audio-player8" src="assets/Distortion!!.mp3" preload="auto"></audio>
+    <audio id="audio-player9" src="assets/Distortion!!.mp3" preload="auto"></audio>
+    <audio id="audio-player10" src="assets/Distortion!!.mp3" preload="auto"></audio>
+
 
     <!-- Music controls (BUTTONS NOT YET ADDED) -->
     <div class="music-controls-container">
@@ -152,13 +181,39 @@
 
             <div class="track-info">
 
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png"
-                    alt="Now Playing" width="70" height="70" alt="Image">
+                <div class="album-cover">
+                    <img id="Cover" src="https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg" alt="Now Playing"
+                        width="70" height="70" alt="Image">
+                </div>
 
                 <div>
+                    <div class="song-details">
+                        <h2 id="playingSong">青春コンプレックス</h2>
+                        <p>結束バンド</p>
+                    </div>
 
-                    <p>Last Drop</p>
-                    <p>Red Velvet</p>
+                </div>
+
+
+                <div class="controls">
+                    <div style="margin-top:15px;justify-content:center;align-items:center;">
+                        <div style="width:220px;">
+                            <button id="shuffle"><i class="fa fa-random"></i></button>
+                            <button id="prev"><i class="fa fa-backward"></i></button>
+                            <button id="play-pause"><i class="fa fa-play"></i></button>
+                            <button id="next"><i class="fa fa-forward"></i></button>
+                            <button id="pause"><i class="fa fa-redo"></i></button>
+                        </div>
+                        <div class="progress-bar">
+                            <span id="current-time">0:00</span>
+                            <input type="range" id="seek-bar" value="0">
+                            <spand id="duration">0:00</spand>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="control_toggleables">
 
                 </div>
 
@@ -167,7 +222,11 @@
         </footer>
 
     </div>
+
+
 </body>
+
+<script src="script.js"></script>
 
 <script>
     var openVideo = (url) => {

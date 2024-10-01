@@ -160,8 +160,15 @@
     width: min(20%, 200px);
     height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
     margin-left: calc(50% - 120px);
 }
+
+/* fa stuff */
+
+.fa-shuffle:before {
+    content: "\f074";
+  }
