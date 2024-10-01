@@ -1,11 +1,22 @@
-const audioPlayer = document.getElementById('audio-player');
+var audioPlayer = document.getElementById('audio-player1');
 const playPauseBtn = document.getElementById('play-pause');
 const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
 const seekBar = document.getElementById('seek-bar');
 const visualizerCanvas = document.getElementById ('visualizer');
 const canvasContext = visualizerCanvas.getContext('2d');
-const 青春コンプレックスbtn = document.getElementById('青春コンプレックス');
+const song1btn = document.getElementById('青春コンプレックス');
+const song2btn = document.getElementById('Distortion!!');
+const song3btn = document.getElementById('カラカラ');
+const song4btn = document.getElementById('');
+const song5btn = document.getElementById('');
+const song6btn = document.getElementById('');
+const song7btn = document.getElementById('');
+const song8btn = document.getElementById('');
+const song9btn = document.getElementById('');
+const song10btn = document.getElementById('');
+var Cover = document.getElementById('Cover');
+var PlayingSong = document.getElementById('playingSong');
 
 let audioContext, analyser, dataArray, bufferLength;
 
@@ -97,6 +108,37 @@ function drawVisualizer(){
     }
 }
 
-青春コンプレックスbtn.addEventListener('click', ()=>{
+song1btn.addEventListener('click', ()=>{
     console.log("test");
+    
+    audioPlayer = document.getElementById("audio-player1");
+    Cover.src = "https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg";
+    PlayingSong.value = '青春コンプレックス';
+})
+song2btn.addEventListener('click', ()=>{
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player2");
+    Cover.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/3/35/Distortion%21%21_Digital_Cover_%28ANXX-01128%29.png/revision/latest?cb=20230127092411";
+    PlayingSong.value = 'Distortion!!';
+})
+song3btn.addEventListener('click', ()=>{
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player3");
+    Cover.src = "https://static.wikia.nocookie.net/bocchi-the-rock/images/7/72/Karakara_Digital_Cover_%28ANXX-01131%29.png/revision/latest?cb=20230127092506";
+})
+song4btn.addEventListener('click', ()=>{
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player1");
+})
+song5btn.addEventListener('click', ()=>{
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player1");
+})
+song6btn.addEventListener('click', ()=>{
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player1");
+})
+song7btn.addEventListener('click', ()=>{
+    console.log("test");
+    audioPlayer = document.getElementById("audio-player1");
 })

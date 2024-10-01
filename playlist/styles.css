@@ -18,7 +18,7 @@ body{
 }
 
 .plaque{
-    background-color: rgba(255, 255, 255, 0.237);
+    background-color: rgb(27, 48, 164);
     padding: 20px;
     width: 400px;
     text-align: center;
@@ -139,6 +139,8 @@ body{
     height: 100px;
 }
 .vertical-menu {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: -130px;
     left: 70px;
@@ -147,7 +149,7 @@ body{
     width: 100%;
     justify-content: left;
     margin-top: 0px;
-    margin-bottom: -100px;
+    margin-bottom: -15%;
     gap: 10px;
     z-index: 1;
     overflow: hidden;
