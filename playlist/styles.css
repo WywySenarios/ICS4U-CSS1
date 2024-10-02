@@ -19,6 +19,7 @@ body{
 
 .plaque{
     position:fixed;
+    top: 10%;
     background-color: rgb(27, 48, 164);
     padding: 20px;
     width: 400px;
@@ -171,6 +172,49 @@ body{
 .vertical-menu a.active {
     background-color: #04AA6D;
     color: white;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -20%;
+    left: 7%;
+}
+.description img{
+    margin-left: 10%;
+    width: 40%;
+    height: auto;
+}
+.description h2{
+    margin-left: 250px;
+    margin-top: 50px;
+    font-size:25px;
+}
+
+.list-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.list-details{
+    text-align: left;
+}
+
+.list-info h2{
+    margin: 0;
+    font-size: 18px;
+}
+
+.list-info p{
+    margin: 5px 0 0;
+    color: #1f1f1f;
+    font-size: 14px;
+
+
 }
 
 /* Universal */
