@@ -31,33 +31,6 @@ body {
   height: 100vh;
 }
 
-/*footer container for the gray bar thingy*/
-.music-controls-container {
-  width: 100%;
-  position: fixed;
-  bottom: 2%;
-  padding: 0 10px;
-}
-
-.music-controls {
-  border-radius: 5px;
-  width: 100%;
-  padding: 5px;
-  background-color: #fff;
-  display: flex;
-}
-
-.music-controls .track-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #000;
-}
-
-.music-controls .track-info img {
-  border-radius: 5px;
-}
-
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -119,7 +92,7 @@ body {
 
 /* Main Content */
 .main-content {
-  height: 430px;
+  height: 510px;
   flex: 1;
   padding: 20px;
   background: #fff;
@@ -234,3 +207,33 @@ header p {
 }
 
 
+/*Footer container*/
+.music-controls-container {
+  width: 100%;
+  position: fixed;
+  bottom: 2%;
+  padding: 0 10px;
+}
+
+.music-controls {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  box-shadow:#000
+}
+
+.music-controls .track-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+.music-controls .track-info img {
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  padding: 1px;
+}
