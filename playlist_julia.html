@@ -1,252 +1,212 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
+  
 <head>
-
+  
   <!-- Defines the character encoding as UTF-8 (supports all characters, symbols) -->
   <meta charset="UTF-8">
-
+    
   <!-- Ensures the website is responsive on different screen sizes by adjusting the viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
   <!-- Sets the title of the webpage that appears in the browser tab -->
   <title>Julia Mode</title>
-
+    
   <!-- Links to an external CSS file for styling the HTML elements -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Tа86w+fsb2TkcmfRyVX3pBnMFcV7oQPJk19QevSCWr3W6A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="stylesheets/julia_style.css">
-
-  <link rel="stylesheet" href="stylesheets\bars.css">
-
+    
 </head>
 
 
 
-<body style="height:calc(100% + 600px);">
-  <!-- Top bar -->
-  <div style="background:#701355;" class="top-bar">
-    <!-- Left buttons -->
-    <div class="buttons">
-
-      <input type="image" src="assets/julia_assets/back.png" alt="Submit" width="30" height="30">
-      <input type="image" src="assets/julia_assets/forward.png" alt="Submit" width="30" height="30">
-      <input type="image" src="assets/julia_assets/home.png" alt="Submit" width="30" height="30">
-
-    </div>
-
-    <!-- Search bar -->
-    <input style="background-color:#f0a383" type="text" placeholder="Search">
-
-    <!-- Right buttons -->
-    <div class="buttons">
-
-      <input type="image" src="assets/julia_assets/notifications.png" alt="Submit" width="30" height="30">
-      <input type="image" src="assets/julia_assets/settings.png" alt="Submit" width="30" height="30">
-      <input type="image" src="assets/julia_assets/pfp.png" alt="Submit" width="30" height="30">
-
-    </div>
-  </div>
-
-  <!-- Sidebar (idk why the bottom property doesn't seem to work) -->
-  <nav style="background-color: #ffffff; height: 100%;top:70px;bottom:200px;" class="sidebar">
-    <div class="menu-icon">
-      <!--different icons-->
-    </div>
-    <div class="menu">
-      <!-- Mode Images -->
-      <div class="playlist-item">
-        <a href="playlist_julia.html"><img src="https://via.placeholder.com/100" alt="Liked Songs"></a>
-        <p>Main Mode</p>
-      </div>
-      <div class="playlist-item">
-        <a href="playlist_eric.html"><img src="https://via.placeholder.com/100" alt="Eric's Playlist"></a>
-        <p>Eric Mode</p>
-      </div>
-      <div class="playlist-item">
-        <a href="playlist_jamie.html"><img src="https://via.placeholder.com/100" alt="Jamie's Playlist"></a>
-        <p>Jamie Mode</p>
-      </div>
-    </div>
-  </nav>
-
-
-
+<body>
   <!-- Main content area -->
-  <div style="background: linear-gradient(to bottom, #e3e3e3, #c6c6c6);height:100%;margin-top:75px;" class="playlistContent">
-    <div class="playlist-container">
-      <header>
-        <h1>Julia’s Playlist</h1>
-        <p>By Julia • 50 songs, 3 hr 30 min</p>
-      </header>
+  <main class="content">
+          
+    <div class="top-bar">
+      <!-- Left buttons -->
+      <div class="buttons">
+                
+        <a href="main.html"><input type="image" src="assets/julia_assets/back.png" alt="Back" width="30" height="30"></a>
+        <a href="playlist_eric.html"><input type="image" src="assets/julia_assets/forward.png" alt="Forward" width="30" height="30"></a>
+        <a href="main.html"><input type="image" src="assets/julia_assets/home.png" alt="Home" width="30" height="30"></a>
+              
+      </div>
+              
+    <!-- Search bar -->
+    <input type="text" placeholder="Search">
+          
+      <!-- Right buttons -->
+      <div class="buttons">
+                
+        <input type="image" src="assets/julia_assets/notifications.png" alt="Notifications" width="30" height="30">
+        <input type="image" src="assets/julia_assets/settings.png" alt="Settings" width="30" height="30">
+        <input type="image" src="assets/julia_assets/pfp.png" alt="Profile" width="30" height="30">
+              
+      </div>
+    </div>
+            
+    <div class="app">
+      
+    
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="menu-icon">
+        </div>
+          <div class="menu">
+            <!-- Mode Images -->
+            <div class="playlist-item">
+              <a href="main.html"><img src="https://static-00.iconduck.com/assets.00/spotify-icon-1024x1024-7zm2z9zz.png" alt="Liked Songs"></a>
+                <p>Main Mode</p>
+            </div>
+            <div class="playlist-item">
+              <a href="playlist_eric.html"><img src="assets/playlist_eric_placerholdericon2.png" alt="Eric's Playlist"></a>
+              <p>Eric Mode</p>
+            </div>
+            <div class="playlist-item">
+              <a href="playlist_jamie.html"><img src="https://upload.wikimedia.org/wikipedia/en/1/12/Kenshi_Yonezu_-_Lemon.png" alt="Jamie's Playlist"></a>
+              <p>Jamie Mode</p>
+            </div>
+          </div>
+    </nav>
 
-      <!-- Playlist Table -->
-      <table class="playlist-table">
-        <thead>
-          <tr class="border-bottom">
-            <th>#</th>
-            <th>Title</th>
-            <th>Album</th>
-            <th>Time</th>
-          </tr>
-        </thead>
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="playlist-container">
+        <header>
+          <h1>Julia's Playlist</h1>
+          <p>By Julia • 50 songs, 3 hr 30 min</p>
+        </header>
 
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>
-              <div class="song-info">
-                <img src="assets/julia_assets/live-my-life-cover.jpeg" alt="Cover">
-                <div class="song-details">
-                  <h2><a href="#" ; id="song1">Live My Life</a></h2>
-                  <p>aespa</p>
+        <!-- Playlist Table -->
+        <table class="playlist-table">
+          <thead>
+            <tr class="border-bottom">
+              <th>#</th>
+              <th>Title</th>
+              <th>Album</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td> 
+                <div class="song-info">
+                  <img src="assets/julia_assets/live-my-life-cover.jpeg" alt="Cover">
+                  <div class="song-details">
+                    <h2>Live My Life</h2>
+                    <p>aespa</p>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td>Armageddon - The 1st Album</td>
-            <td>2:39</td>
-          </tr>
-
-          <tr>
-            <td>2</td>
-            <td>
-              <div class="song-info">
-                <img src="assets/julia_assets/the-perfect-pair-cover.jpeg" alt="Cover">
-                <div class="song-details">
-                  <h2><a href="#" ; id="song2">the perfect pair</a></h2>
-                  <p>beabadoobee</p>
+              </td>
+              <td>Armageddon - The 1st Album</td>
+              <td>2:39</td>
+            </tr>
+            
+            <tr>
+              <td>2</td>
+                <td>
+                  <div class="song-info">
+                    <img src="assets/julia_assets/the-perfect-pair-cover.jpeg" alt="Cover">
+                    <div class="song-details">
+                      <h2>the perfect pair</h2>
+                      <p>beabadoobee</p>
+                    </div>
+                  </div>
+                </td>
+              <td>Beatopia</td>
+              <td>2:57</td>
+            </tr>
+            
+            <tr>
+              <td>3</td>
+              <td>
+                <div class="song-info">
+                  <img src="assets/julia_assets/iris-cover.jpeg" alt="Cover">
+                  <div class="song-details">
+                    <h2>Iris</h2>
+                    <p>The Goo Goo Dolls</p>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td>Beatopia</td>
-            <td>2:57</td>
-          </tr>
-
-          <tr>
-            <td>3</td>
-            <td>
-              <div class="song-info">
-                <img src="assets/julia_assets/iris-cover.jpeg" alt="Cover">
-                <div class="song-details">
-                  <h2><a href="#" ; id="song3">Iris</a></h2>
-                  <p>The Goo Goo Dolls</p>
+              </td>
+              <td>Dizzy up the Girl</td>
+              <td>4:50</td>
+            </tr>
+            
+            <tr>
+              <td>4</td>
+              <td>
+                <div class="song-info">
+                  <img src="assets/julia_assets/dont-you-think-its-strange-cover.jpeg" alt="Cover">
+                  <div class="song-details">
+                    <h2>Don't You Think It's Strange?</h2>
+                    <p>Wallows</p>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td>Dizzy up the Girl</td>
-            <td>4:50</td>
-          </tr>
-
-          <tr>
-            <td>4</td>
-            <td>
-              <div class="song-info">
-                <img src="assets/julia_assets/dont-you-think-its-strange-cover.jpeg" alt="Cover">
-                <div class="song-details">
-                  <h2><a href="#" ; id="song4">Don't You Think It's Strange?</a></h2>
-                  <p>Wallows</p>
+              </td>
+              <td>Model</td>
+              <td>3:27</td>
+            </tr>
+            
+            <tr>
+              <td>5</td>
+              <td>
+                <div class="song-info">
+                  <img src="assets/julia_assets/adios-cover.jpeg" alt="Cover">
+                  <div class="song-details">
+                    <h2>adios</h2>
+                    <p>JAWNY</p>
+                  </div>
+                </div>                        
+              </td>
+              <td>It’s Never Fair, Always True</td>
+              <td>3:23</td>
+            </tr>
+            
+            <tr>
+              <td>6</td>
+              <td>
+                <div class="song-info">
+                  <img src="assets/julia_assets/cosmic-cover.jpeg" alt="Cover">
+                  <div class="song-details">
+                    <h2>Cosmic</h2>
+                    <p>Red Velvet</p>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td>Model</td>
-            <td>3:27</td>
-          </tr>
-
-          <tr>
-            <td>5</td>
-            <td>
-              <div class="song-info">
-                <img src="assets/julia_assets/adios-cover.jpeg" alt="Cover">
-                <div class="song-details">
-                  <h2><a href="#" ; id="song5">adios</a></h2>
-                  <p>JAWNY</p>
-                </div>
-              </div>
-            </td>
-            <td>It’s Never Fair, Always True</td>
-            <td>3:23</td>
-          </tr>
-
-          <tr>
-            <td>6</td>
-            <td>
-              <div class="song-info">
-                <img src="assets/julia_assets/cosmic-cover.jpeg" alt="Cover">
-                <div class="song-details">
-                  <h2><a href="#" ; id="song6">Cosmic</a></h2>
-                  <p>Red Velvet</p>
-                </div>
-              </div>
-            </td>
-            <td>Cosmic</td>
-            <td>3:23</td>
-          </tr>
-        </tbody>
-      </table>
-    </div> <!--end of playlist-container -->
+              </td>
+              <td>Cosmic</td>
+              <td>3:23</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!--end of playlist-container -->
+    
+      <!-- Now Playing Section -->
+      <div class="now-playing">
+        <h3>Now Playing</h3>
+          <img src="assets/julia_assets/cosmic-cover.jpeg" alt="Now Playing Cover">
+          <p>Last Drop<br><span>Red Velvet</span></p>
+      </div>
+            
+    </main>
+    
   </div>
+    
+</main>
 
-  <!-- <div class="playlistContent">
-  <a href="#" ; id="song7">song7</a>
-  <a href="#" ; id="song8">song8</a>
-  <a href="#" ; id="song9">song9</a>
-  <a href="#" ; id="song10">song10</a>
-</div> -->
-
-  <!-- Song files -->
-  <audio id="audio-player1" src="assets/seisyun complex.mp3" preload="auto"></audio>
-  <audio id="audio-player2" src="assets/Distortion!!.mp3" preload="auto"></audio>
-  <audio id="audio-player3" src="assets/Karakara.mp3" preload="auto"></audio>
-  <audio id="audio-player4" src="assets/Distortion!!.mp3" preload="auto"></audio>
-  <audio id="audio-player5" src="assets/Distortion!!.mp3" preload="auto"></audio>
-  <audio id="audio-player6" src="assets/Distortion!!.mp3" preload="auto"></audio>
-  <audio id="audio-player7" src="assets/Distortion!!.mp3" preload="auto"></audio>
-  <audio id="audio-player8" src="assets/Distortion!!.mp3" preload="auto"></audio>
-  <audio id="audio-player9" src="assets/Distortion!!.mp3" preload="auto"></audio>
-  <audio id="audio-player10" src="assets/Distortion!!.mp3" preload="auto"></audio>
-
-
-  <!-- Music controls (BUTTONS NOT YET ADDED) -->
   <div class="music-controls-container">
     <footer class="music-controls">
-      <div class="track-info">
-        <div class="album-cover">
-          <img id="Cover" src="https://i.ebayimg.com/images/g/hOIAAOSwYZxjbkFJ/s-l400.jpg" alt="Now Playing" width="70"
-            height="70" alt="Image">
-        </div>
-        <div>
-          <div class="song-details">
-            <h2 id="playingSong">青春コンプレックス</h2>
-            <p>結束バンド</p>
-          </div>
-
-        </div>
-        <div class="controls">
-          <div style="margin-top:15px;justify-content:center;align-items:center;">
-            <div style="width:220px;">
-              <button id="shuffle"><i class="fa fa-random"></i></button>
-              <button id="prev"><i class="fa fa-backward"></i></button>
-              <button id="play-pause"><i class="fa fa-play"></i></button>
-              <button id="next"><i class="fa fa-forward"></i></button>
-              <button id="pause"><i class="fa fa-redo"></i></button>
+        <div class="track-info">
+          <img src="https://static.vecteezy.com/system/resources/previews/018/930/693/original/spotify-app-logo-spotify-icon-transparent-free-png.png" alt="Now Playing" width="70" height="70" alt="Image">
+            <div>
+              <p>Last Drop</p>
+              <p>Red Velvet</p>
             </div>
-            <div class="progress-bar">
-              <span id="current-time">0:00</span>
-              <input type="range" id="seek-bar" value="0">
-              <spand id="duration">0:00</spand>
-            </div>
-          </div>
         </div>
-        <!-- <div class="control_toggleables"></div> -->
-      </div>
-    </footer>
+    </footer>  
   </div>
-
-
 </body>
-
-<script src="script.js"></script>
-
 </html>
