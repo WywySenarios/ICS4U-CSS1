@@ -92,7 +92,7 @@ body {
 
 /* Main Content */
 .main-content {
-  height: 610px;
+  height: 570px;
   flex: 1;
   padding: 20px;
   background: #fff;
@@ -136,7 +136,7 @@ header p {
 }
 
 .playlist-table td {
-    padding: 8px;
+    padding-top: 20px;
     text-align: left;
     color: #000;
 }
