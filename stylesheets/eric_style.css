@@ -36,6 +36,7 @@ th, tr {
     height: 15%;
     vertical-align: middle;
     text-align: left;
+    padding:8px;
 }
 
 th.songNum {
@@ -44,9 +45,14 @@ th.songNum {
 }
 
 th.imgIcon {
+    padding:0px;
     text-align: center;
     width: 40px;
     height: 15%;
+}
+
+th.songButton {
+    padding:0px;
 }
 
 button.songButton {
