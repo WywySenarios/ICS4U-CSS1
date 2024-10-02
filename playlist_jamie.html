@@ -86,13 +86,15 @@
 
   @keyframes slidein {
     from {
-      translate: 150vw 0;
-      scale: 200% 1;
+      translate: 0 -20px;
+      /* scale: 200% 1; */
+      opacity: 0;
     }
 
     to {
       translate: 0 0;
-      scale: 100% 1;
+      /* scale: 100% 1; */
+      opacity: 1;
     }
   }
 
@@ -173,7 +175,7 @@
 <body style="background-color: rgba(0, 0, 36, 0.7);">
 
   <!-- Top bar -->
-  <div style="background-color: rgba(0, 0, 36, 0.7);" class="top-bar">
+  <div style="background-color: rgba(0, 0, 36, 1);" class="top-bar">
     <!-- Left buttons -->
     <div class="buttons">
 
