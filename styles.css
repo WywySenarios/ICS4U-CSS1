@@ -1,6 +1,6 @@
 body{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100vh;
     background-color: w#f0f0f0;
@@ -9,8 +9,18 @@ body{
     background-color: rgb(82, 6, 74);
 }
 
+.album-cover img{
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+.album-cover:hover{
+    transform: scale(0.98);
+}
+
 .plaque{
-    background-color: rgba(255, 255, 255, 0.237);
+    position:fixed;
+    top: 10%;
+    background-color: rgb(27, 48, 164);
     padding: 20px;
     width: 400px;
     text-align: center;
@@ -73,13 +83,16 @@ body{
 }
 
 
-
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .controls button{
     background: none;
     border: none;
     cursor: pointer;
-    padding:8px;
     font-size: 20px;
 }
 
@@ -126,4 +139,196 @@ body{
 #visualizer{
     width: 100%;
     height: 100px;
+}
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    left: -25%;
+    width: 60%;
+    height: 65%;
+    padding: 80px;
+    justify-content: left;
+    margin-top: 0px;
+    margin-bottom: -15%;
+    gap: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -20%;
+    left: 7%;
+}
+.description img{
+    margin-left: 10%;
+    width: 40%;
+    height: auto;
+}
+.description h2{
+    margin-left: 210px;
+    margin-top: 50px;
+    font-size:50px;
+}
+
+.list-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.list-details{
+    text-align: left;
+}
+
+.list-info h2{
+    margin: 0;
+    font-size: 18px;
+}
+
+.list-info p{
+    margin: 5px 0 0;
+    color: #1f1f1f;
+    font-size: 14px;
+
+
+}
+
+
+
+/* Universal */
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    /* space between buttons */
+}
+
+/* Main content */
+
+.playlistContent {
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 220px;
+}
+
+/* Top bar */
+
+.top-bar {
+    /* background: linear-gradient(to bottom, #e3e3e3, #c6c6c6); */
+    background: repeating-linear-gradient(#e3e3e3 50%, #108f9a 50%);
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.top-bar input[type="text"] {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+    left: 0;
+    position: fixed;
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.playlist-item {
+    text-align: center;
+}
+
+.playlist-item img {
+    border-radius: 4px;
+    width: 100px;
+    height: 100px;
+}
+
+.playlist-item p {
+    margin-top: 3px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer */
+
+/*footer container for the gray bar thingy*/
+.music-controls-container {
+    width: 100%;
+    position: fixed;
+    bottom: 2%;
+    padding: 0 10px;
+}
+
+.music-controls {
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    background-color: #fff;
+    display: flex;
+}
+
+.music-controls .track-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+}
+
+.music-controls .track-info img {
+    border-radius: 5px;
 }
