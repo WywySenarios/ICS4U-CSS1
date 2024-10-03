@@ -130,7 +130,7 @@ header p {
 }
 
 .playlist-table th {
-    padding: 10px;
+    padding-bottom: 10px;
     text-align: left;
     color: #000;
 }
