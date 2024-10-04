@@ -81,7 +81,7 @@ th.songButton {
 }
 
 button.songButton {
-    font-family: "Brush Script MT", monospace;
+    font-family: monospace;
     background-color: #fae4b9;
     width: 100%;
     height: 100%;
