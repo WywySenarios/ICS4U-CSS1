@@ -20,6 +20,31 @@ img.songIcon{
     border-color: #701355;
 }
 
+/* Animations START */
+
+.playlistContent {
+    animation-duration: 1.5s;
+    animation-name: appear;
+}
+
+.top-bar {
+    animation-duration: 1.5s;
+    animation-name: appear;
+}
+ 
+
+.sidebar {
+    animation-duration: 1.5s;
+    animation-name: appear;
+}
+
+.music-controls-container {
+    animation-duration: 1.5s;
+    animation-name: appear;
+}
+
+/* Animations END */
+
 table {
     width: 100%;
     /* border:solid; */
@@ -41,7 +66,7 @@ th, tr {
 
 th.songNum {
     width:0px;
-    padding:8px
+    padding:8px;
 }
 
 th.imgIcon {
@@ -66,4 +91,19 @@ button.songButton {
 
 p {
     color: #701355;
+
+    animation-duration: 1.5s;
+    animation-name: appear;
+}
+
+@keyframes appear {
+    from {
+        translate: 0 10px;
+        opacity: 0%;
+    }
+
+    to {
+        translate: 0 0;
+        opacity: 100%;
+    }
 }
